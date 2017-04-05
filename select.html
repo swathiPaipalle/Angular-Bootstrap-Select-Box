@@ -1,0 +1,12 @@
+<div class="btn-group btn-group-select-option" uib-dropdown ng-mouseover="showDropDown(true)" ng-mouseleave="showDropDown(false)" ng-class="{'hover-dropdown':showList,'dropup':isDropdownUp}">
+  <button type="button" class="btn dropdown-toggle btn-select-option" ng-class="{'error':isError}">
+    <span ng-if="!selectedItem" class="selected-box">Select</span>
+    <span ng-if="selectedItem" class="selected-box">{{selectedItem.label}}</span>
+    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+  </button>
+  <ul class="dropdown-menu" uib-dropdown-menu role="menu" ng-style="{width:clientWidth + 'px'}" ng-class="{'dropdown-menu-hover':showList}" ng-mouseleave="showDropDown(false)">
+    <li role="menuitem" ng-repeat="item in optionList" ng-class="{'active': selectedValue == item.value}">
+      <a href="#" ng-click="selectItem($event,item)">{{item.label}}</a>
+    </li>
+  </ul>
+</div>

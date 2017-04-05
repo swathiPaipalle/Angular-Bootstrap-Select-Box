@@ -1,0 +1,58 @@
+/* Styles go here */
+.row{
+  margin:15px;
+}
+.healthprint .dropup .dropdown-menu {
+  bottom: 59px !important;
+  box-shadow: none;
+  top: auto !important;
+}
+
+.healthprint .btn-group-select-option .dropdown-menu {
+  min-width: 1px;
+  min-height: 10px;
+  max-height: 200px;
+  text-align: left;
+  overflow-y: auto;
+  margin-top: -10px;
+  border-radius: 0;
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.btn-group-select-option .dropdown-menu-hover {
+  display: block;
+  background-color: #fff;
+}
+.btn-group-select-option .active > a {
+    background-color: #FFF;
+    color: #999 !important;
+}
